@@ -2,10 +2,10 @@ import os
 import platform
 import sys
 try:
-    import pywifi
+    import pywifi # type: ignore
 except ModuleNotFoundError:
     os.system("pip install pywifi")
-from pywifi import const
+from pywifi import const # type: ignore
 from scripts.banner import banner2,banner,clear
 from scripts.sprint import sprint
 from scripts.colors import ran,y,r,g,c
